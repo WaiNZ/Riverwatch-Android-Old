@@ -125,7 +125,7 @@
     
 
 
-    <meta-data android:name="com.crashlytics.ApiKey" android:value="5d6c5e6c70396a84db4e75299f8b51a29842e90f"/>
+    <meta-data android:name="com.crashlytics.ApiKey" android:value="5519a6e6d546fa5b534204f5c21d7edebc91dc54"/>
     </application>
 
 </manifest>

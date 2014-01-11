@@ -43,8 +43,11 @@ public abstract class AbstractSubmissionActivity extends SherlockActivity {
 
 	@Override
 	  public boolean onCreateOptionsMenu(Menu menu) {
+		
 	    MenuInflater inflater = getSupportMenuInflater(); //getMenuInflater();
+	    
 	    inflater.inflate(R.menu.top_menu, menu);
+	    
 	        return true;
 	  }
 

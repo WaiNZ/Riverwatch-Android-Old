@@ -2,6 +2,10 @@ package nz.co.android.cowseye2.activity;
 
 import java.io.IOException;
 
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
+
 import nz.co.android.cowseye2.R;
 import nz.co.android.cowseye2.common.Constants;
 import nz.co.android.cowseye2.utility.AlertBuilder;
@@ -77,6 +81,22 @@ public class SelectImageActivity extends AbstractSubmissionActivity {
 			}
 		});
 	}
+	
+	@Override
+	  public boolean onCreateOptionsMenu(Menu menu) {
+	    MenuInflater inflater = getSupportMenuInflater(); //getMenuInflater();
+	    inflater.inflate(R.menu.kill_menu, menu);
+	        return true;
+	  }
+
+	@Override
+	  public boolean onOptionsItemSelected(MenuItem item) {
+		if(item.getItemId() == R.id.crash){
+	     throw new NullPointerException();
+		}
+		return super.onOptionsItemSelected(item);
+	     
+	  }
 
 	@Override
 	protected void nextActivety() {
